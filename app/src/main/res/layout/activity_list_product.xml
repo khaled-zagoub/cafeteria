@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="3dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="20dp"
+    tools:context="com.cafeteria_project.second_msir.univ_bechare.cafeteria.ListProduct"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="List Product"
+
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff1500"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:paddingBottom="8dp"/>
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+
+        android:background="@drawable/animation"
+        android:layout_below="@+id/textView" />
+
+</RelativeLayout>

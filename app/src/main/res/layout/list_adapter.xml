@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cafeteria_project.second_msir.univ_bechare.cafeteria.ListProduct">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/desg"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:textColor="#ef0a0a"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/TxtFprice"
+        android:layout_below="@+id/desg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#09aa17"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/description"
+        android:layout_below="@+id/TxtFprice"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0056e1"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/description"
+        android:layout_toLeftOf="@+id/description"
+        android:layout_toStartOf="@+id/description" />
+
+</RelativeLayout>
+

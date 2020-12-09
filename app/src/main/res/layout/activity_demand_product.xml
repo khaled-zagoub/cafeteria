@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cafeteria_project.second_msir.univ_bechare.cafeteria.DemandProduct"
+    android:background="@drawable/animation">
+
+    <Spinner
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerQT"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/BtSup"
+        android:layout_toStartOf="@+id/BtSup" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="supp"
+        android:id="@+id/BtSup"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/totalPrice"
+        android:layout_toStartOf="@+id/totalPrice"
+        android:background="@drawable/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/totalPrice"
+        android:layout_above="@+id/BtSup"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f40a0a"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send"
+        android:id="@+id/buttonSend"
+        android:layout_below="@+id/BtSup"
+        android:layout_toLeftOf="@+id/spinner"
+        android:layout_toStartOf="@+id/spinner"
+        android:background="@drawable/button2" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_alignLeft="@+id/totalPrice"
+        android:layout_alignStart="@+id/totalPrice"
+        android:layout_alignBottom="@+id/buttonSend"
+        android:layout_below="@+id/BtSup"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_toStartOf="@+id/scrollView2"
+        android:layout_alignRight="@+id/spinnerQT"
+        android:layout_alignEnd="@+id/spinnerQT" />
+
+    <ScrollView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:id="@+id/scrollView2"
+        android:layout_toRightOf="@+id/spinnerQT"
+        android:layout_toEndOf="@+id/spinnerQT"
+        android:layout_alignBottom="@+id/listView2"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="."
+            android:id="@+id/textinfo"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_alignTop="@+id/scrollView2"
+            android:layout_toRightOf="@+id/spinnerQT"
+            android:layout_toEndOf="@+id/spinnerQT" />
+    </ScrollView>
+
+</RelativeLayout>

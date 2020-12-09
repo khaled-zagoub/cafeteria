@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">cafeteria</string>
+    <string name="open">Open</string>
+    <string name="Close">Close</string>
+    <string name="title_activity_maps">cafeteria</string>
+
+</resources>
